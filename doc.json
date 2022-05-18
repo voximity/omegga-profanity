@@ -1,0 +1,62 @@
+{
+  "name": "profanity",
+  "description": "Automatically ban users for using certain profanities.",
+  "author": "voximity",
+  "config": {
+    "badWords": {
+      "description": "A list of words that the user will be warned or temporarily banned for.",
+      "type": "list",
+      "itemType": "string",
+      "default": []
+    },
+    "terribleWords": {
+      "description": "A list of words that the user will be permanently banned, instantly, without exception for.",
+      "type": "list",
+      "itemType": "string",
+      "default": [
+        "tranny",
+        "trannie",
+        "faggot",
+        "fag",
+        "dike",
+        "dyke",
+        "kike",
+        "nigger",
+        "nigga",
+        "chink"
+      ]
+    },
+    "terribleBanReason": {
+      "description": "The reason to use when a user is permanently banned for saying a terribly bad word.",
+      "type": "string",
+      "default": "Severe profanity used."
+    },
+    "warns": {
+      "description": "How many times to warn a user for using a bad word before they will be temporarily banned.",
+      "type": "number",
+      "default": 2
+    },
+    "bans": {
+      "description": "How many times to ban a user for using a bad word before they will be permanently banned.",
+      "type": "number",
+      "default": 1
+    },
+    "tempBanLength": {
+      "description": "The length of the user's temporary ban, in minutes.",
+      "type": "number",
+      "default": 120
+    },
+    "tempBanReason": {
+      "description": "The reason to use when a user is temporarily banned for saying a bad word.",
+      "type": "string",
+      "default": "Use of profane language."
+    },
+    "exemptRoles": {
+      "description": "A list of roles that are exempt from the profanity filter.",
+      "type": "list",
+      "itemType": "role",
+      "default": []
+    }
+  },
+  "commands": []
+}
